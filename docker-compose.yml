@@ -10,7 +10,7 @@ services:
     restart: always
     command:
       - "gotenberg"
-      - "--libreoffice-restart-after=0"
+      - "--libreoffice-restart-after=1000"
       - "--libreoffice-auto-start=true"
     networks:
       - my_net

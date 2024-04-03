@@ -13,7 +13,7 @@ services:
       - "--libreoffice-restart-after=1000"
       - "--libreoffice-auto-start=true"
     networks:
-      - gotenberg
+      - gotenberg_net
     volumes:
       - ./fonts:/usr/local/share/fonts:ro
 
@@ -27,7 +27,7 @@ services:
       - "--libreoffice-restart-after=1000"
       - "--libreoffice-auto-start=true"
     networks:
-      - gotenberg
+      - gotenberg_net
     volumes:
       - ./fonts:/usr/local/share/fonts:ro
 
@@ -41,7 +41,7 @@ services:
       - "--libreoffice-restart-after=1000"
       - "--libreoffice-auto-start=true"
     networks:
-      - gotenberg
+      - gotenberg_net
     volumes:
       - ./fonts:/usr/local/share/fonts:ro
 

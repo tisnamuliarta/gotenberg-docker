@@ -12,9 +12,11 @@ services:
       - "gotenberg"
       - "--libreoffice-restart-after=0"
       - "--libreoffice-auto-start=true"
-    networks: 
-     - my_net
+    networks:
+      - my_net
+    volumes:
+      - ./fonts:/usr/local/share/fonts:ro
 
 networks:
-    my_net:
-        driver: bridge
+  my_net:
+    driver: bridge

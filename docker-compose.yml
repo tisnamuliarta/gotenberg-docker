@@ -13,10 +13,51 @@ services:
       - "--libreoffice-restart-after=1000"
       - "--libreoffice-auto-start=true"
     networks:
-      - my_net
+      - gotenberg
     volumes:
       - ./fonts:/usr/local/share/fonts:ro
 
+  gotenberg2:
+    image: gotenberg/gotenberg:8
+    ports:
+      - "7000:3000"
+    restart: always
+    command:
+      - "gotenberg"
+      - "--libreoffice-restart-after=1000"
+      - "--libreoffice-auto-start=true"
+    networks:
+      - gotenberg
+    volumes:
+      - ./fonts:/usr/local/share/fonts:ro
+
+  gotenberg3:
+    image: gotenberg/gotenberg:8
+    ports:
+      - "7000:3000"
+    restart: always
+    command:
+      - "gotenberg"
+      - "--libreoffice-restart-after=1000"
+      - "--libreoffice-auto-start=true"
+    networks:
+      - gotenberg
+    volumes:
+      - ./fonts:/usr/local/share/fonts:ro
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "7000:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - gotenberg
+      - gotenberg2
+      - gotenberg3
+    networks:
+      - gotenberg_net
+
 networks:
-  my_net:
+  gotenberg:
     driver: bridge

@@ -9,7 +9,8 @@ services:
     command:
       - "gotenberg"
       - "--libreoffice-restart-after=10"
-      - "--api-timeout=1000s"
+      - "--api-timeout=5000s"
+      - "--log-level=debug"
       # - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
@@ -22,7 +23,8 @@ services:
     command:
       - "gotenberg"
       - "--libreoffice-restart-after=10"
-      - "--api-timeout=1000s"
+      - "--api-timeout=5000s"
+      - "--log-level=debug"
       # - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
@@ -35,7 +37,8 @@ services:
     command:
       - "gotenberg"
       - "--libreoffice-restart-after=10"
-      - "--api-timeout=1000s"
+      - "--api-timeout=5000s"
+      - "--log-level=debug"
       # - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
@@ -48,7 +51,8 @@ services:
     command:
       - "gotenberg"
       - "--libreoffice-restart-after=10"
-      - "--api-timeout=1000s"
+      - "--api-timeout=5000s"
+      - "--log-level=debug"
       # - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
@@ -61,7 +65,8 @@ services:
     command:
       - "gotenberg"
       - "--libreoffice-restart-after=10"
-      - "--api-timeout=1000s"
+      - "--api-timeout=5000s"
+      - "--log-level=debug"
       # - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net

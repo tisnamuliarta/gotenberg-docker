@@ -73,6 +73,48 @@ services:
     volumes:
       - ./fonts:/usr/local/share/fonts:ro
 
+  gotenberg6:
+    image: gotenberg/gotenberg:8
+    restart: always
+    command:
+      - "gotenberg"
+      - "--libreoffice-restart-after=10"
+      - "--api-timeout=5000s"
+      - "--log-level=debug"
+      # - "--libreoffice-auto-start=true"
+    networks:
+      - gotenberg_net
+    volumes:
+      - ./fonts:/usr/local/share/fonts:ro
+
+  gotenberg7:
+    image: gotenberg/gotenberg:8
+    restart: always
+    command:
+      - "gotenberg"
+      - "--libreoffice-restart-after=10"
+      - "--api-timeout=5000s"
+      - "--log-level=debug"
+      # - "--libreoffice-auto-start=true"
+    networks:
+      - gotenberg_net
+    volumes:
+      - ./fonts:/usr/local/share/fonts:ro
+
+  gotenberg8:
+    image: gotenberg/gotenberg:8
+    restart: always
+    command:
+      - "gotenberg"
+      - "--libreoffice-restart-after=10"
+      - "--api-timeout=5000s"
+      - "--log-level=debug"
+      # - "--libreoffice-auto-start=true"
+    networks:
+      - gotenberg_net
+    volumes:
+      - ./fonts:/usr/local/share/fonts:ro
+
   nginx:
     image: nginx:latest
     ports:
@@ -85,6 +127,9 @@ services:
       - gotenberg3
       - gotenberg4
       - gotenberg5
+      - gotenberg6
+      - gotenberg7
+      - gotenberg8
     networks:
       - gotenberg_net
 

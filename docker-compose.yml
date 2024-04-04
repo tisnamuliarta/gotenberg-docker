@@ -9,6 +9,7 @@ services:
     command:
       - "gotenberg"
       - "--libreoffice-restart-after=10"
+      - "--api-timeout=600s"
       # - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
@@ -21,6 +22,7 @@ services:
     command:
       - "gotenberg"
       - "--libreoffice-restart-after=10"
+      - "--api-timeout=600s"
       # - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
@@ -33,6 +35,33 @@ services:
     command:
       - "gotenberg"
       - "--libreoffice-restart-after=10"
+      - "--api-timeout=600s"
+      # - "--libreoffice-auto-start=true"
+    networks:
+      - gotenberg_net
+    volumes:
+      - ./fonts:/usr/local/share/fonts:ro
+
+  gotenberg4:
+    image: gotenberg/gotenberg:8
+    restart: always
+    command:
+      - "gotenberg"
+      - "--libreoffice-restart-after=10"
+      - "--api-timeout=600s"
+      # - "--libreoffice-auto-start=true"
+    networks:
+      - gotenberg_net
+    volumes:
+      - ./fonts:/usr/local/share/fonts:ro
+
+  gotenberg5:
+    image: gotenberg/gotenberg:8
+    restart: always
+    command:
+      - "gotenberg"
+      - "--libreoffice-restart-after=10"
+      - "--api-timeout=600s"
       # - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
@@ -49,6 +78,8 @@ services:
       - gotenberg
       - gotenberg2
       - gotenberg3
+      - gotenberg4
+      - gotenberg5
     networks:
       - gotenberg_net
 

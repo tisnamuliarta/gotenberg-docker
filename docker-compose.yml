@@ -6,10 +6,10 @@ services:
   gotenberg:
     image: gotenberg/gotenberg:8
     restart: always
-    # command:
-    #   - "gotenberg"
-    #   - "--libreoffice-restart-after=1000"
-    #   - "--libreoffice-auto-start=true"
+    command:
+      - "gotenberg"
+      - "--libreoffice-restart-after=1000"
+      # - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
     volumes:
@@ -18,10 +18,10 @@ services:
   gotenberg2:
     image: gotenberg/gotenberg:8
     restart: always
-    # command:
-    #   - "gotenberg"
-    #   - "--libreoffice-restart-after=1000"
-    #   - "--libreoffice-auto-start=true"
+    command:
+      - "gotenberg"
+      - "--libreoffice-restart-after=2000"
+      # - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
     volumes:
@@ -30,10 +30,10 @@ services:
   gotenberg3:
     image: gotenberg/gotenberg:8
     restart: always
-    # command:
-    #   - "gotenberg"
-    #   - "--libreoffice-restart-after=1000"
-    #   - "--libreoffice-auto-start=true"
+    command:
+      - "gotenberg"
+      - "--libreoffice-restart-after=3000"
+      # - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
     volumes:

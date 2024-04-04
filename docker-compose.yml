@@ -10,7 +10,7 @@ services:
       - "gotenberg"
       - "--libreoffice-restart-after=10"
       - "--api-timeout=5000s"
-      - "--log-level=debug"
+      # - "--log-level=debug"
       # - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
@@ -24,7 +24,7 @@ services:
       - "gotenberg"
       - "--libreoffice-restart-after=10"
       - "--api-timeout=5000s"
-      - "--log-level=debug"
+      # - "--log-level=debug"
       # - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
@@ -38,7 +38,7 @@ services:
       - "gotenberg"
       - "--libreoffice-restart-after=10"
       - "--api-timeout=5000s"
-      - "--log-level=debug"
+      # - "--log-level=debug"
       # - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
@@ -52,7 +52,7 @@ services:
       - "gotenberg"
       - "--libreoffice-restart-after=10"
       - "--api-timeout=5000s"
-      - "--log-level=debug"
+      # - "--log-level=debug"
       # - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
@@ -66,7 +66,7 @@ services:
       - "gotenberg"
       - "--libreoffice-restart-after=10"
       - "--api-timeout=5000s"
-      - "--log-level=debug"
+      # - "--log-level=debug"
       # - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
@@ -80,7 +80,7 @@ services:
       - "gotenberg"
       - "--libreoffice-restart-after=10"
       - "--api-timeout=5000s"
-      - "--log-level=debug"
+      # - "--log-level=debug"
       # - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
@@ -94,7 +94,7 @@ services:
       - "gotenberg"
       - "--libreoffice-restart-after=10"
       - "--api-timeout=5000s"
-      - "--log-level=debug"
+      # - "--log-level=debug"
       # - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
@@ -108,7 +108,7 @@ services:
       - "gotenberg"
       - "--libreoffice-restart-after=10"
       - "--api-timeout=5000s"
-      - "--log-level=debug"
+      # - "--log-level=debug"
       # - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net

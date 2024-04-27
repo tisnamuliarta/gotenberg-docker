@@ -1,4 +1,4 @@
-version: "3"
+version: "3.9"
 
 services:
   # Your other services.
@@ -12,8 +12,8 @@ services:
       - "--api-timeout=50s"
       # - "--log-level=debug"
       - "--libreoffice-auto-start=true"
-    networks:
-      - gotenberg_net
+    # networks:
+    #   - gotenberg_net
     volumes:
       - ./fonts:/usr/local/share/fonts:ro
 
@@ -26,8 +26,8 @@ services:
       - "--api-timeout=50s"
       # - "--log-level=debug"
       - "--libreoffice-auto-start=true"
-    networks:
-      - gotenberg_net
+    # networks:
+    #   - gotenberg_net
     volumes:
       - ./fonts:/usr/local/share/fonts:ro
 
@@ -40,8 +40,8 @@ services:
       - "--api-timeout=50s"
       # - "--log-level=debug"
       - "--libreoffice-auto-start=true"
-    networks:
-      - gotenberg_net
+    # networks:
+    #   - gotenberg_net
     volumes:
       - ./fonts:/usr/local/share/fonts:ro
 
@@ -54,8 +54,8 @@ services:
       - "--api-timeout=50s"
       # - "--log-level=debug"
       - "--libreoffice-auto-start=true"
-    networks:
-      - gotenberg_net
+    # networks:
+    #   - gotenberg_net
     volumes:
       - ./fonts:/usr/local/share/fonts:ro
 
@@ -68,8 +68,8 @@ services:
       - "--api-timeout=50s"
       # - "--log-level=debug"
       - "--libreoffice-auto-start=true"
-    networks:
-      - gotenberg_net
+    # networks:
+    #   - gotenberg_net
     volumes:
       - ./fonts:/usr/local/share/fonts:ro
 
@@ -82,8 +82,8 @@ services:
       - "--api-timeout=50s"
       # - "--log-level=debug"
       - "--libreoffice-auto-start=true"
-    networks:
-      - gotenberg_net
+    # networks:
+    #   - gotenberg_net
     volumes:
       - ./fonts:/usr/local/share/fonts:ro
 
@@ -96,8 +96,8 @@ services:
       - "--api-timeout=50s"
       # - "--log-level=debug"
       - "--libreoffice-auto-start=true"
-    networks:
-      - gotenberg_net
+    # networks:
+    #   - gotenberg_net
     volumes:
       - ./fonts:/usr/local/share/fonts:ro
 
@@ -110,8 +110,8 @@ services:
       - "--api-timeout=50s"
       # - "--log-level=debug"
       - "--libreoffice-auto-start=true"
-    networks:
-      - gotenberg_net
+    # networks:
+    #   - gotenberg_net
     volumes:
       - ./fonts:/usr/local/share/fonts:ro
 

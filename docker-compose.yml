@@ -11,7 +11,7 @@ services:
       - "--libreoffice-restart-after=1000s"
       - "--api-timeout=50s"
       # - "--log-level=debug"
-       - "--libreoffice-auto-start=true"
+      - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
     volumes:
@@ -25,7 +25,7 @@ services:
       - "--libreoffice-restart-after=1000s"
       - "--api-timeout=50s"
       # - "--log-level=debug"
-       - "--libreoffice-auto-start=true"
+      - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
     volumes:
@@ -39,7 +39,7 @@ services:
       - "--libreoffice-restart-after=1000s"
       - "--api-timeout=50s"
       # - "--log-level=debug"
-       - "--libreoffice-auto-start=true"
+      - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
     volumes:
@@ -53,7 +53,7 @@ services:
       - "--libreoffice-restart-after=1000s"
       - "--api-timeout=50s"
       # - "--log-level=debug"
-       - "--libreoffice-auto-start=true"
+      - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
     volumes:
@@ -67,7 +67,7 @@ services:
       - "--libreoffice-restart-after=1000s"
       - "--api-timeout=50s"
       # - "--log-level=debug"
-       - "--libreoffice-auto-start=true"
+      - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
     volumes:
@@ -81,7 +81,7 @@ services:
       - "--libreoffice-restart-after=1000s"
       - "--api-timeout=50s"
       # - "--log-level=debug"
-       - "--libreoffice-auto-start=true"
+      - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
     volumes:
@@ -95,7 +95,7 @@ services:
       - "--libreoffice-restart-after=1000s"
       - "--api-timeout=50s"
       # - "--log-level=debug"
-       - "--libreoffice-auto-start=true"
+      - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
     volumes:
@@ -109,7 +109,7 @@ services:
       - "--libreoffice-restart-after=1000s"
       - "--api-timeout=50s"
       # - "--log-level=debug"
-       - "--libreoffice-auto-start=true"
+      - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
     volumes:

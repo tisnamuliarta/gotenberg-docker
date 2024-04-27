@@ -13,7 +13,7 @@ services:
       # - "--log-level=debug"
       - "--libreoffice-auto-start=true"
     networks:
-      - gotenberg_net
+      - gotenberg_gotenberg_net
     volumes:
       - ./fonts:/usr/local/share/fonts:ro
 
@@ -27,7 +27,7 @@ services:
       # - "--log-level=debug"
       - "--libreoffice-auto-start=true"
     networks:
-      - gotenberg_net
+      - gotenberg_gotenberg_net
     volumes:
       - ./fonts:/usr/local/share/fonts:ro
 
@@ -41,7 +41,7 @@ services:
       # - "--log-level=debug"
       - "--libreoffice-auto-start=true"
     networks:
-      - gotenberg_net
+      - gotenberg_gotenberg_net
     volumes:
       - ./fonts:/usr/local/share/fonts:ro
 
@@ -55,7 +55,7 @@ services:
       # - "--log-level=debug"
       - "--libreoffice-auto-start=true"
     networks:
-      - gotenberg_net
+      - gotenberg_gotenberg_net
     volumes:
       - ./fonts:/usr/local/share/fonts:ro
 
@@ -69,7 +69,7 @@ services:
       # - "--log-level=debug"
       - "--libreoffice-auto-start=true"
     networks:
-      - gotenberg_net
+      - gotenberg_gotenberg_net
     volumes:
       - ./fonts:/usr/local/share/fonts:ro
 
@@ -83,7 +83,7 @@ services:
       # - "--log-level=debug"
       - "--libreoffice-auto-start=true"
     networks:
-      - gotenberg_net
+      - gotenberg_gotenberg_net
     volumes:
       - ./fonts:/usr/local/share/fonts:ro
 
@@ -97,7 +97,7 @@ services:
       # - "--log-level=debug"
       - "--libreoffice-auto-start=true"
     networks:
-      - gotenberg_net
+      - gotenberg_gotenberg_net
     volumes:
       - ./fonts:/usr/local/share/fonts:ro
 
@@ -111,7 +111,7 @@ services:
       # - "--log-level=debug"
       - "--libreoffice-auto-start=true"
     networks:
-      - gotenberg_net
+      - gotenberg_gotenberg_net
     volumes:
       - ./fonts:/usr/local/share/fonts:ro
 
@@ -131,8 +131,8 @@ services:
       - gotenberg7
       - gotenberg8
     networks:
-      - gotenberg_net
+      - gotenberg_gotenberg_net
 
 networks:
-  gotenberg_net:
+  gotenberg_gotenberg_net:
     driver: bridge

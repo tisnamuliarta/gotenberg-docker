@@ -8,10 +8,10 @@ services:
     restart: always
     command:
       - "gotenberg"
-      - "--libreoffice-restart-after=20"
+      - "--libreoffice-restart-after=1000s"
       - "--api-timeout=50s"
       # - "--log-level=debug"
-      # - "--libreoffice-auto-start=true"
+       - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
     volumes:
@@ -22,10 +22,10 @@ services:
     restart: always
     command:
       - "gotenberg"
-      - "--libreoffice-restart-after=40"
-      - "--api-timeout=100s"
+      - "--libreoffice-restart-after=1000s"
+      - "--api-timeout=50s"
       # - "--log-level=debug"
-      # - "--libreoffice-auto-start=true"
+       - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
     volumes:
@@ -36,10 +36,10 @@ services:
     restart: always
     command:
       - "gotenberg"
-      - "--libreoffice-restart-after=80"
-      - "--api-timeout=200s"
+      - "--libreoffice-restart-after=1000s"
+      - "--api-timeout=50s"
       # - "--log-level=debug"
-      # - "--libreoffice-auto-start=true"
+       - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
     volumes:
@@ -50,10 +50,10 @@ services:
     restart: always
     command:
       - "gotenberg"
-      - "--libreoffice-restart-after=120"
-      - "--api-timeout=300s"
+      - "--libreoffice-restart-after=1000s"
+      - "--api-timeout=50s"
       # - "--log-level=debug"
-      # - "--libreoffice-auto-start=true"
+       - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
     volumes:
@@ -64,10 +64,10 @@ services:
     restart: always
     command:
       - "gotenberg"
-      - "--libreoffice-restart-after=160"
-      - "--api-timeout=400s"
+      - "--libreoffice-restart-after=1000s"
+      - "--api-timeout=50s"
       # - "--log-level=debug"
-      # - "--libreoffice-auto-start=true"
+       - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
     volumes:
@@ -78,10 +78,10 @@ services:
     restart: always
     command:
       - "gotenberg"
-      - "--libreoffice-restart-after=180"
-      - "--api-timeout=500s"
+      - "--libreoffice-restart-after=1000s"
+      - "--api-timeout=50s"
       # - "--log-level=debug"
-      # - "--libreoffice-auto-start=true"
+       - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
     volumes:
@@ -92,10 +92,10 @@ services:
     restart: always
     command:
       - "gotenberg"
-      - "--libreoffice-restart-after=200"
-      - "--api-timeout=600s"
+      - "--libreoffice-restart-after=1000s"
+      - "--api-timeout=50s"
       # - "--log-level=debug"
-      # - "--libreoffice-auto-start=true"
+       - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
     volumes:
@@ -106,10 +106,10 @@ services:
     restart: always
     command:
       - "gotenberg"
-      - "--libreoffice-restart-after=250"
-      - "--api-timeout=700s"
+      - "--libreoffice-restart-after=1000s"
+      - "--api-timeout=50s"
       # - "--log-level=debug"
-      # - "--libreoffice-auto-start=true"
+       - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net
     volumes:

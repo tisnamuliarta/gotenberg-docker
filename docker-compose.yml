@@ -8,8 +8,8 @@ services:
     restart: always
     command:
       - "gotenberg"
-      - "--libreoffice-restart-after=10"
-      - "--api-timeout=5000s"
+      - "--libreoffice-restart-after=20"
+      - "--api-timeout=50s"
       # - "--log-level=debug"
       # - "--libreoffice-auto-start=true"
     networks:
@@ -22,8 +22,8 @@ services:
     restart: always
     command:
       - "gotenberg"
-      - "--libreoffice-restart-after=10"
-      - "--api-timeout=5000s"
+      - "--libreoffice-restart-after=40"
+      - "--api-timeout=100s"
       # - "--log-level=debug"
       # - "--libreoffice-auto-start=true"
     networks:
@@ -36,8 +36,8 @@ services:
     restart: always
     command:
       - "gotenberg"
-      - "--libreoffice-restart-after=10"
-      - "--api-timeout=5000s"
+      - "--libreoffice-restart-after=80"
+      - "--api-timeout=200s"
       # - "--log-level=debug"
       # - "--libreoffice-auto-start=true"
     networks:
@@ -50,8 +50,8 @@ services:
     restart: always
     command:
       - "gotenberg"
-      - "--libreoffice-restart-after=10"
-      - "--api-timeout=5000s"
+      - "--libreoffice-restart-after=120"
+      - "--api-timeout=300s"
       # - "--log-level=debug"
       # - "--libreoffice-auto-start=true"
     networks:
@@ -64,8 +64,8 @@ services:
     restart: always
     command:
       - "gotenberg"
-      - "--libreoffice-restart-after=10"
-      - "--api-timeout=5000s"
+      - "--libreoffice-restart-after=160"
+      - "--api-timeout=400s"
       # - "--log-level=debug"
       # - "--libreoffice-auto-start=true"
     networks:
@@ -78,8 +78,8 @@ services:
     restart: always
     command:
       - "gotenberg"
-      - "--libreoffice-restart-after=10"
-      - "--api-timeout=5000s"
+      - "--libreoffice-restart-after=180"
+      - "--api-timeout=500s"
       # - "--log-level=debug"
       # - "--libreoffice-auto-start=true"
     networks:
@@ -92,8 +92,8 @@ services:
     restart: always
     command:
       - "gotenberg"
-      - "--libreoffice-restart-after=10"
-      - "--api-timeout=5000s"
+      - "--libreoffice-restart-after=200"
+      - "--api-timeout=600s"
       # - "--log-level=debug"
       # - "--libreoffice-auto-start=true"
     networks:
@@ -106,8 +106,8 @@ services:
     restart: always
     command:
       - "gotenberg"
-      - "--libreoffice-restart-after=10"
-      - "--api-timeout=5000s"
+      - "--libreoffice-restart-after=250"
+      - "--api-timeout=700s"
       # - "--log-level=debug"
       # - "--libreoffice-auto-start=true"
     networks:

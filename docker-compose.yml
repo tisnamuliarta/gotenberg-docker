@@ -1,4 +1,4 @@
-version: "3.3"
+version: "3"
 
 services:
   # Your other services.
@@ -8,12 +8,11 @@ services:
     restart: always
     command:
       - "gotenberg"
-      - "--libreoffice-restart-after=1000s"
+      - "--libreoffice-restart-after=20"
       - "--api-timeout=50s"
-      # - "--log-level=debug"
       - "--libreoffice-auto-start=true"
     networks:
-      - my_gotenberg_net
+      - gotenberg_net
     volumes:
       - ./fonts:/usr/local/share/fonts:ro
 
@@ -22,12 +21,11 @@ services:
     restart: always
     command:
       - "gotenberg"
-      - "--libreoffice-restart-after=1000s"
-      - "--api-timeout=50s"
-      # - "--log-level=debug"
+      - "--libreoffice-restart-after=40"
+      - "--api-timeout=100s"
       - "--libreoffice-auto-start=true"
     networks:
-      - my_gotenberg_net
+      - gotenberg_net
     volumes:
       - ./fonts:/usr/local/share/fonts:ro
 
@@ -36,12 +34,11 @@ services:
     restart: always
     command:
       - "gotenberg"
-      - "--libreoffice-restart-after=1000s"
-      - "--api-timeout=50s"
-      # - "--log-level=debug"
+      - "--libreoffice-restart-after=80"
+      - "--api-timeout=200s"
       - "--libreoffice-auto-start=true"
     networks:
-      - my_gotenberg_net
+      - gotenberg_net
     volumes:
       - ./fonts:/usr/local/share/fonts:ro
 
@@ -50,12 +47,11 @@ services:
     restart: always
     command:
       - "gotenberg"
-      - "--libreoffice-restart-after=1000s"
-      - "--api-timeout=50s"
-      # - "--log-level=debug"
+      - "--libreoffice-restart-after=120"
+      - "--api-timeout=300s"
       - "--libreoffice-auto-start=true"
     networks:
-      - my_gotenberg_net
+      - gotenberg_net
     volumes:
       - ./fonts:/usr/local/share/fonts:ro
 
@@ -64,12 +60,11 @@ services:
     restart: always
     command:
       - "gotenberg"
-      - "--libreoffice-restart-after=1000s"
-      - "--api-timeout=50s"
-      # - "--log-level=debug"
+      - "--libreoffice-restart-after=160"
+      - "--api-timeout=400s"
       - "--libreoffice-auto-start=true"
     networks:
-      - my_gotenberg_net
+      - gotenberg_net
     volumes:
       - ./fonts:/usr/local/share/fonts:ro
 
@@ -78,12 +73,11 @@ services:
     restart: always
     command:
       - "gotenberg"
-      - "--libreoffice-restart-after=1000s"
-      - "--api-timeout=50s"
-      # - "--log-level=debug"
+      - "--libreoffice-restart-after=180"
+      - "--api-timeout=500s"
       - "--libreoffice-auto-start=true"
     networks:
-      - my_gotenberg_net
+      - gotenberg_net
     volumes:
       - ./fonts:/usr/local/share/fonts:ro
 
@@ -92,12 +86,11 @@ services:
     restart: always
     command:
       - "gotenberg"
-      - "--libreoffice-restart-after=1000s"
-      - "--api-timeout=50s"
-      # - "--log-level=debug"
+      - "--libreoffice-restart-after=200"
+      - "--api-timeout=600s"
       - "--libreoffice-auto-start=true"
     networks:
-      - my_gotenberg_net
+      - gotenberg_net
     volumes:
       - ./fonts:/usr/local/share/fonts:ro
 
@@ -106,12 +99,11 @@ services:
     restart: always
     command:
       - "gotenberg"
-      - "--libreoffice-restart-after=1000s"
-      - "--api-timeout=50s"
-      # - "--log-level=debug"
+      - "--libreoffice-restart-after=250"
+      - "--api-timeout=700s"
       - "--libreoffice-auto-start=true"
     networks:
-      - my_gotenberg_net
+      - gotenberg_net
     volumes:
       - ./fonts:/usr/local/share/fonts:ro
 
@@ -131,8 +123,8 @@ services:
       - gotenberg7
       - gotenberg8
     networks:
-      - my_gotenberg_net
+      - gotenberg_net
 
 networks:
-  my_gotenberg_net:
+  gotenberg_net:
     driver: bridge

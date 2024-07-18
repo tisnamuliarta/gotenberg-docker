@@ -9,7 +9,7 @@ services:
     command:
       - "gotenberg"
       - "--libreoffice-restart-after=20"
-      - "--api-timeout=50s"
+      - "--api-timeout=300s"
       - "--libreoffice-auto-start=true"
     networks:
       - gotenberg_net

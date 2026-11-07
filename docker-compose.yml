@@ -4,7 +4,7 @@ services:
   # Your other services.
 
   gotenberg:
-    image: gotenberg/gotenberg:8
+    image: gotenberg/gotenberg:9
     restart: always
     command:
       - "gotenberg"
@@ -17,7 +17,7 @@ services:
       - ./fonts:/usr/local/share/fonts:ro
 
   gotenberg2:
-    image: gotenberg/gotenberg:8
+    image: gotenberg/gotenberg:9
     restart: always
     command:
       - "gotenberg"
@@ -30,7 +30,7 @@ services:
       - ./fonts:/usr/local/share/fonts:ro
 
   gotenberg3:
-    image: gotenberg/gotenberg:8
+    image: gotenberg/gotenberg:9
     restart: always
     command:
       - "gotenberg"
